@@ -1,7 +1,5 @@
 $(function() {
 
-// $("#draggable").draggable();
-
 var rows = 10;
 var cols = 10;
 
@@ -17,6 +15,8 @@ s = a.join('')
 console.log(s);
 console.log($('#board'));
 $('#board').append(s);
+
+$(".letter").draggable();
 
 });
 
