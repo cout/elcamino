@@ -16,7 +16,10 @@ console.log(s);
 console.log($('#board'));
 $('#board').append(s);
 
-$(".letter").draggable();
+$('.letter').draggable();
+console.log($('#board tr td'));
+$('#board tr td').droppable({
+    drop: function() { alert('dropped'); } });
 
 });
 
